@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite DB files
+*.sqlite3
+*.db
+
+# Virtual environments
+venv/
+.env/
+env/
+.venv/
+
+# macOS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and reports
+*.log
+*.pot
+*.pyc
+
+# Others
+*.swp
