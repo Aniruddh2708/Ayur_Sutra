@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard - AyurSutra{% endblock %}
+{% block content %}
+<div class="container-fluid">
+  <h1 class="mb-4"><i class="fas fa-tachometer-alt"></i> Admin Dashboard <small class="text-muted">- System Overview</small></h1>
+
+  <div class="row mb-4">
+    <div class="col-md-3">
+      <div class="card bg-primary text-white"><div class="card-body"><div class="d-flex justify-content-between"><div><h4>Patients</h4><h2>-</h2></div><div><i class="fas fa-users fa-3x"></i></div></div></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-success text-white"><div class="card-body"><div class="d-flex justify-content-between"><div><h4>Today's Appointments</h4><h2>-</h2></div><div><i class="fas fa-calendar-check fa-3x"></i></div></div></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-warning text-white"><div class="card-body"><div class="d-flex justify-content-between"><div><h4>Pending Bills</h4><h2>-</h2></div><div><i class="fas fa-file-invoice fa-3x"></i></div></div></div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-danger text-white"><div class="card-body"><div class="d-flex justify-content-between"><div><h4>Low Stock Items</h4><h2>-</h2></div><div><i class="fas fa-exclamation-triangle fa-3x"></i></div></div></div></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card"><div class="card-header"><i class="fas fa-user-plus"></i> Patient Management <small class="text-muted">- Mohit Yadav</small></div><div class="card-body"><p>Manage patient profiles and Ayurvedic assessments</p><a href="{{ url_for('patients_list') }}" class="btn btn-primary btn-sm"><i class="fas fa-users"></i> View Patients</a> <a href="{{ url_for('add_patient') }}" class="btn btn-success btn-sm"><i class="fas fa-plus"></i> Add Patient</a></div></div>
+    </div>
+    <div class="col-md-4">
+      <div class="card"><div class="card-header"><i class="fas fa-calendar-alt"></i> Scheduling System <small class="text-muted">- Mohit Yadav</small></div><div class="card-body"><p>Book and manage therapy appointments</p><a href="{{ url_for('schedule_view') }}" class="btn btn-primary btn-sm"><i class="fas fa-calendar"></i> View Schedule</a> <a href="{{ url_for('book_appointment') }}" class="btn btn-success btn-sm"><i class="fas fa-plus-circle"></i> Book Appointment</a></div></div>
+    </div>
+    <div class="col-md-4">
+      <div class="card"><div class="card-header"><i class="fas fa-chart-line"></i> Progress & Billing <small class="text-muted">- Aditya Mastwal</small></div><div class="card-body"><p>Track treatment progress and manage billing</p><a href="{{ url_for('progress_dashboard') }}" class="btn btn-primary btn-sm"><i class="fas fa-chart-bar"></i> Progress</a> <a href="{{ url_for('billing_dashboard') }}" class="btn btn-warning btn-sm"><i class="fas fa-rupee-sign"></i> Billing</a></div></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Progress Dashboard - AyurSutra{% endblock %}
+{% block content %}
+<div class="container">
+  <h2 class="mb-4"><i class="fas fa-chart-line"></i> Progress Dashboard (Aditya Mastwal)</h2>
+  <div class="alert alert-info">Patient treatment progress, session notes, and improvements summary will show here.</div>
+  <table class="table table-bordered">
+    <thead><tr><th>Date</th><th>Patient</th><th>Therapy</th><th>Progress Note</th><th>Next Session</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>2025-10-08</td>
+        <td>Demo Patient</td>
+        <td>Shirodhara</td>
+        <td>First session completed. Progress: Good.</td>
+        <td>2025-10-10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Book Appointment - AyurSutra{% endblock %}
+{% block content %}
+<div class="container">
+  <h2 class="mb-4"><i class="fas fa-plus-circle"></i> Book Appointment (Mohit Yadav)</h2>
+  <form>
+    <div class="mb-3">
+      <label>Patient Name</label>
+      <input type="text" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+      <label>Therapist</label>
+      <input type="text" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+      <label>Therapy</label>
+      <input type="text" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+      <label>Date</label>
+      <input type="date" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+      <label>Time</label>
+      <input type="time" class="form-control" disabled>
+    </div>
+    <button type="submit" class="btn btn-primary" disabled>Book</button>
+  </form>
+  <div class="alert alert-warning mt-3">This is a UI demo. Scheduling will be implemented in the backend.</div>
+</div>
+{% endblock %}

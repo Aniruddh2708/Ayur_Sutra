@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Billing Dashboard - AyurSutra{% endblock %}
+{% block content %}
+<div class="container">
+  <h2 class="mb-4"><i class="fas fa-file-invoice-dollar"></i> Billing Dashboard (Aditya Mastwal)</h2>
+  <div class="alert alert-info">Invoices and payment statuses are displayed here (feature preview).</div>
+  <table class="table table-bordered">
+    <thead><tr><th>Invoice ID</th><th>Patient</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>INV20251008</td>
+        <td>Demo Patient</td>
+        <td>₹2000</td>
+        <td>Pending</td>
+        <td>2025-10-08</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Inventory - AyurSutra{% endblock %}
+{% block content %}
+<div class="container">
+  <h2 class="mb-4"><i class="fas fa-boxes"></i> Inventory Management (Aditya Mastwal)</h2>
+  <div class="alert alert-info">List of oils, medicines, and consumables including stock alerts.</div>
+  <table class="table table-bordered">
+    <thead><tr><th>Item</th><th>Type</th><th>Current Stock</th><th>Min Alert</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Sesame Oil</td>
+        <td>Oil</td>
+        <td>500 ml</td>
+        <td>1000 ml</td>
+        <td><span class="badge bg-danger">Low</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
